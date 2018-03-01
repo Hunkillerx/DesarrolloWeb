@@ -1,0 +1,67 @@
+body{
+    font-size: 20px;
+    color: gainsboro;
+    background: black;
+    font-family: cursive;
+    display: inline;
+    align-content: center;
+}
+img{
+    width: 150px;
+    border-radius: 50%
+}
+
+.imagen-rectangular{
+    width: 300px;
+    border-radius: 15%
+}
+
+#main{
+    background: rgb(50,50,50);
+    color: #FFFFFFFF;
+    display: grid,flex;
+    width: 80%;
+    border-collapse: collapse;
+    border-style: dashed;
+    border-top-style: double;
+    border-left-style: dotted;
+    border-top-color: aqua;
+    margin: auto;
+
+}
+
+.android{
+    color: green;
+    font-size: 50px;
+
+}
+
+#img-wow:hover{
+    width: 300px;
+    transition: width 500ms;
+
+}
+#img-wow{
+    transition: width 500ms;
+}
+.menu {
+    display: inline-table;
+    margin: 10px auto;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+ul {
+    list-style: georgian;
+    display: inline-block;
+
+}
+
+li {
+    float: right;
+    margin: 2px;
+}

@@ -1,0 +1,44 @@
+{
+    padding: 0;
+}
+
+.wrapper {
+    background-color: rgba(0, 0, 0, );
+    margin: auto;
+}
+
+.caja {
+    margin: auto;
+    margin-top: :10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px;
+    background: rgba(38, 38, 38, 0.5);
+    width: 10%;
+    border: 1ox black solid;
+    color: aliceblue;
+    display: inline-table;
+}
+
+body {
+    background-image: url(https://k60.kn3.net/taringa/4/F/2/F/6/C/VCLR/666.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.texto {
+    text-align: center;
+    text-decoration-style: double;
+    font-family: cursive;
+    line-height: 20px;
+    text-transform: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    background-color: forestgreen;
+}

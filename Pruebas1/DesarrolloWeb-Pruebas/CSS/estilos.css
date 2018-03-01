@@ -1,0 +1,13 @@
+
+.textos {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

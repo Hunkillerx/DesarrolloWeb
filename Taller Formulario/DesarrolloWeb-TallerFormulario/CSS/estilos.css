@@ -1,0 +1,115 @@
+/**
+Documento de css que brinda los estilos para el formulario
+@author Jose Armando Diaz Segura
+@date 20 Febrero 2018
+**/
+
+/**
+Elemento que brinda estilos a la clase Wrapper que es la que contiene todo el cuerpo del formulario. Se le asigna orgnizacion de los elementos en el wrapper, datos como el margen,tamño asi como un border ligero redondeado
+**/
+
+.wrapper {
+    background: #e6e6ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+/**
+Elemento que brinda una organizacion en el espacio a todo elemento con clase button permitiendo que se acomplen a los diferentes tamaños que pueda tomar el navegador. Ademas se le agrega una transformacion al acercar el mouse a los buttons haciendo que estos aumenten su tamaño levemente.
+**/
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    transform: scale(1.1);
+}
+
+/**
+Elemento que cambia el icono tomado por el mouse al pasar por encima de cualquier elemento button, señeccion o texte, en este caso la flecha cambia por una mano.
+**/
+
+button,
+.texte,
+.seleccion {
+    cursor: pointer;
+}
+
+/**
+Elemento que le brinda a los elementos dentro del header del formulario una organizacion en el espacio asi como señalar que en todo momento su contenido este centrado
+**/
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/**
+Elemento que señala el tamaño del margen de arriba entre las diferentes divisiones del formulario, permitiendo un mejor control del espacio al no estar cada division directamente encima de otra
+**/
+
+form div + div {
+    margin-top: 1em;
+}
+
+/**
+Elemento que establece un parametro para todos los label en el formulario, evitando disparidades de estilo entre diferentes labels.
+**/
+
+label {
+    font: 15px sans-serif;
+    text-align: left;
+}
+
+/**
+Elemento de estilo que igual que el anterior parametriza los textos ingresados en los input o textareas en el formulario, ademas se agrega una suave sombra a las cajas de los input.
+**/
+
+input,
+textarea {
+    font: 15px sans-serif;
+    border: 1px solid #999;
+    box-shadow: 1px 1px #888888;
+}
+
+/**
+Elemento que brinda formato al cuerpo del documento, en este caso se uso para establecer una imagen de fondo desde la carpeta de recursos asi como estableces su no repetecion y alinemiento en el tamaño del navegador sin ningun tipo de cambio.
+**/
+
+body {
+    background-image: url('../Recursos/images.jpeg');
+    background-attachment: fixed;
+    background-repet: no-repeat;
+}
+
+/**
+Elemento de estilo que brinda un color al encabezado del Formulario permitiendo ser visible contrastando con el background
+**/
+
+.encabezado {
+    color: #e6e6ff;
+}
+
+/**
+Elemento de estilo que define el tamaño de la casilla de edad de la mascota dentro del formulario permietiendo un espacio acorde con el tipo de elemento que se espera que el user ingrese
+**/
+
+.edad {
+    width: 70px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Formulario creado para conocer los diferentes tipus de input permitidos en html -->
+<!-- @author Jose Armando Diaz Segura -->
+<!-- @date 20 Febrero 2018 -->
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Formulario dueños
+    </title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!-- Titulo principal -->
+    <header>
+        <h1 class="encabezado">Formulario para dueños de mascotas</h1>
+    </header>
+    <!-- Clase wrapper que contendra todo el cuerpo del formulario -->
+    <div class="wrapper">
+        <form action="" method="get">
+            <!-- Primer input señalado,  Text que permite que el user ingrese un texto sin ninguna restriccion
+                   ademas se coloca un placeholder con icono de Use y se pide que debe ser completado obligatoriamente. -->
+            <div class="textos">
+                <input type="text" name="nombre" id="nombre" placeholder="&#128100; Nombre" required autofocus>
+            </div>
+            <div>
+                <!-- Segundo input señalado, tipo e Email que permite que el user ingrese un correo electronico valido por
+                    lo que debe contener un simbolo "@" asi como terminar con un dominio generico usualmente .com o .
+                    edu se agrega igualmente un placeholder con icono asi como ser obligatoriamente completado. -->
+                <input type="email" name="correo" id="correo" placeholder="&#128231; Email" required autofocus>
+            </div>
+            <div>
+                <!-- Tercer input señalado, tipo Password este permite al user ingresar una contraseña que esta protegida
+               con unos signos(Puntos) que evitan que otra persona vea registrada la contraseña visualmente. No cuenta con
+               requerimientos especificos, contiene tambien un placeholder con icono y es un requerimiento tambien. -->
+                <input type="password" name="contraseña" id="contraseña" placeholder="&#128477; Contraseña" required autofocus>
+            </div>
+            <div>
+                <!-- Cuarto input señalado, igual que la input anterior cuenta con los mismos atributos y requerimientos-->
+                <input type="password" name="contraseña" id="repitaContrasña" placeholder="&#128477; Repita Contraseña" required autofocus>
+            </div>
+            <div>
+                <!-- Quinto input señalado, tipo Radio que permite al user seleccionar solo una de las dos opciones presentadas
+               en este caso se le pide al user que seleccion se genero, por lo que puede ser solo hombre o mujer (usualmente)
+               por lo que si toma uno no puede escoger tambien el otro. -->
+                <label>Seleccione su Genero</label>
+                <input type="radio" name="sexo" id="hombre" class="seleccion"> <label>Hombre</label>
+                <input type="radio" name="sexo" id="mujer" class="seleccion"> <label>Mujer</label>
+            </div>
+            <div>
+                <!-- Sexto input señalado, tipo Date que permite al user ingresar una fecha en formato dia/mes/año, en este caso sele pide al user señalar su fecha de nacimiento. -->
+                <label>Ingrese su fecha de nacimiento </label>
+                <input type="date">
+            </div>
+            <div>
+
+                <label>Seleccione su estrato Socioeconomico</label>
+                <!-- Septimo input señalado, en este caso en especial no se presenta un input propiamente, mas se decide utilizar una  select que permite al user escoger una opcion desde una lista deplegada al hacer click sobre ella. En este caso el texto señalado antes del select le pide al user que seleccion su estrato Socioeconomico-->
+                <select name="Estrato" class="texte">
+                <!-- Los option, son las opciones presentadas al user en el select, con su respectivo valor y texto señalando la opcion-->
+                <option value="1">Estrato 1</option>
+                <option value="2">Estrato 2</option>
+                <option value="3">Estrato 3</option>
+                <option value="4">Estrato 4</option>
+                <option value="5">Estrato 5</option>
+                <option value="6">Estrato 6</option>
+            </select>
+            </div>
+            <div>
+               <!-- Octavo input señalado, se vuelve a usar el tipo radio ya que se le pide al user escoger solo una de las dos opciones, bien sea si o no a la pregunta señalada en el <label> -->
+                <label>Tiene mascotas?</label>
+                <input type="radio" name="mascota" id="mascotaSi" class="seleccion"> <label>Si</label>
+                <input type="radio" name="mascota" id="mascotaNo" class="seleccion"> <label>No</label>
+            </div>
+            <div>
+               <!-- Noveno input señalado, tipo checkpoint. Este tipo permite al user señalar una o varias opciones diferentes esto contrario al tipo radio, de igual manera se utilizo de nuevo un tipo texto que brinda al user la capacidad de comentar una opcion diferente a las señaladas en cada uno de los checkbox -->
+                <label>Cuales?</label>
+
+                <input type="checkbox" name="perroCheck" id="perro" class="seleccion"><label>Perro</label>
+                <input type="checkbox" name="gatoCheck" id="gato" class="seleccion"> <label>Gato</label>
+                <input type="checkbox" name="pecesCheck" id="peces" class="seleccion"> <label>Peces</label>
+                <input type="checkbox" name="roedorCheck" id="roedor" class="seleccion"> <label>Roedor</label>
+                <input type="checkbox" name="avesCheck" id="aves" class="seleccion"> <label>Aves</label>
+                <input type="checkbox" name="otrosCheck" id="otros" class="seleccion"> <label>Otra</label>
+                <input type="textarea" name="Texto" id="Otras" placeholder="¿Cual?">
+            </div>
+            <div>
+               <!-- Decimo input señalado, tipo color. Este input mucho mas grafico que los anteriores manejados permite que al user dar click en la cuadricula color negro se abra una pestaña con la herramienta basica de navegar en la escala de colores, brindando la posibilidad de que el user pueda escoger uno entre millones de posibilidades de colores. En este caso se le pide al user que asocie la herramienta a el color de su mascota-->
+                <label>¿Que color tiene su mascota?</label>
+                <input type="color" name="color">
+            </div>
+            <div>
+               <!-- Undecimo input señalado, tipo number. Este input permite al user señalar un numero entero brindando tambien la herramienta de navegacion entre los numeros para poder corregir en caso de necesitarlo el numero ingresado por el user. Se pide en este caso que el user señale la edad en Años de su mascota  -->
+                <label>¿Que edad tiene su mascota?</label>
+                <input type="number" class="edad" placeholder="Edad">
+                <label>Años</label>
+            </div>
+            <div>
+               <!-- Duodecimo input señalado, tipo file. Este input brinda la posibilidad al user de subir un archivo (En este caso sin formato especifico) almacenado en la computadora. La herramienta permite que al user dar click en "Browse" se despliegue una pestaña de navegacion grafica de los archivos de la computadora. -->
+                <label>Suba el archivo con la foto de su mascota </label>
+                <input type="file" name="foto">
+            </div>
+            <!-- En este espacio se agregan dos elementos de clase Button con funciones diferentes -->
+            <div class="button">
+               <!-- Este button permite al usuario enviar la informacion que acaba de almacenar en el cuerpo del formato-->
+                <button type="submit">Enviar</button>
+                <!-- En cambio este button brinda la capacidad al usuario de borrar todo elemento almacenado en el formato en alguno de sus campos. Dejando cada campo del formulario en blanco.-->
+                <button type="reset">
+                    Limpiar
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
