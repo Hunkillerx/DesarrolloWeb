@@ -1,0 +1,67 @@
+
+table {
+    border-collapse: collapse;
+}
+
+
+tr,th,td {
+    border:1px solid black;
+}
+.imgArreglo {
+    width: 200px;
+    transition-delay: 0.5sg;
+    margin: 10px;
+}
+.imgArreglo:hover{
+    width: 300px;
+    transition: width 500ms;
+}
+
+.imgsArreglos {
+    display: inline-block;
+    
+}
+h2 {
+    color: deeppink;
+    text-align: center;
+    font-size: 60px;
+}
+
+body {
+    background-image: url(../Recursos/Fondo.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    max-width: 400px;
+    align-content: center;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    
+}
+
+nav {
+    display: inline-table;
+    margin: 10px auto;
+    padding: 10 px;
+}
+
+li {
+    
+}
+
+footer {
+    padding-top: 200px;
+    text-align: center;
+}
+
+
+
+wrapper {
+    align-content: center;
+    
+    box-sizing: border-box;
+}
+
+.comentario {
+    width: 500px;
+    
+}
