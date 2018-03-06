@@ -1,0 +1,52 @@
+* {
+    margin: 0 auto;
+    padding: auto;
+    width: 90%;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: solid 1px white;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+#pantalla {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    margin: 5px auto;
+    width: 90%;
+    padding: 20px;
+    border-radius: 60%;
+}
+
+.btn-num {
+    display: inline-flex;
+    width: 75px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.btn-oper {
+    width: 75px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+body {
+    background-image: url("../Recursos/spiration%20dark.png");
+}
+
+#operator-c {
+    background-color: orangered;
+}
+
+
+#operator-= {
+    background-color: darkblue;
+}

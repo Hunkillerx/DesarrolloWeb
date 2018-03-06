@@ -85,3 +85,4 @@ var elementoNuevo = document.createElement("p", "Soy un elemento creado");
 
 elementoNuevo.textContent = "Soy un elemento creado"
 elementoPorID.appendChild(elementoNuevo);
+var elem = elementoNuevo.appendChild()
