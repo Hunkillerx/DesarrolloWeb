@@ -1,7 +1,28 @@
+/**
+Documento de javascript que brinda los scripts de control para la pagina web y sus operaciones.
+@author Jose Armando Diaz Segura
+@date 03 Marzo 2018
+@version 1.0
+**/
+
+/**
+ *Variable que contendra el elemento de la pantalla obtenido de el documento HTML
+**/
 var pantalla = document.getElementById("pantalla");
+
+/**
+ *Variable que contendra el elemento de el texto historial que obtenido de el documento HTML
+**/
 var historial = document.getElementById("historial");
+
+/**
+ *Variable que contendra el elemento de los botones de los numeros. Estos ornaizados como un arreglo de botones.
+**/
 var btnNumeros = document.getElementsByClassName("btn-num");
 
+/**
+ * Variable que obtendra el atributo del button al hacer click y lo presentara en la pantalla
+ */
 var numClick = function () {
     if (pantalla.getAttribute("value") === "0") {
         pantalla.setAttribute("Value", this.textContent);
@@ -10,7 +31,9 @@ var numClick = function () {
     }
 };
 
-
+/**
+ * Elemento que recorre el arreglo y obtiene 
+**/
 for (var i = 0; i < btnNumeros.length; i++) {
     btnNumeros[i].onclick = numClick;
 }
@@ -106,7 +129,6 @@ document.getElementById("operator-=").onclick =
         operador = "";
         pantalla.setAttribute("value", resultado);
     }
-
 function igual() {
     valor2 = pantalla.getAttribute("value");
     switch (operador) {

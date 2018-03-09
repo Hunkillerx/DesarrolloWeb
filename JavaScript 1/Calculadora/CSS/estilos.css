@@ -7,6 +7,7 @@ Documento de css que brinda los estilos para la calculadora
 /**
 Elemento que brinda el estilo a toda la pagina en general.Se le asigna un margin y padding automatico asi como un tamaño general del 90% de la pagina
 **/
+
 * {
     margin: auto;
     padding: auto;
@@ -16,6 +17,7 @@ Elemento que brinda el estilo a toda la pagina en general.Se le asigna un margin
 /**
 Elemento que brinda estilos a la clase Wrapper que es la que contiene todo el cuerpo de la calculadora. Se asigna un tamaño maximo a el cuerpo, una alineacion asi como un borde de color blanco, un control de padding de 10 pixeles y un margin automatico.
 **/
+
 .wrapper {
     max-width: 400px;
     text-align: center;
@@ -23,9 +25,11 @@ Elemento que brinda estilos a la clase Wrapper que es la que contiene todo el cu
     padding-bottom: 10px;
     margin: auto;
 }
+
 /**
 Elemento que brinda estilo a la pantalla de la calculadora, desde el control de estilo a la fuente, asi como un margen, tamaño y radio al borde.
 **/
+
 #pantalla {
     font-size: 20px;
     font-family: sans-serif;
@@ -36,6 +40,10 @@ Elemento que brinda estilo a la pantalla de la calculadora, desde el control de 
     border-radius: 60%;
 }
 
+/**
+Elemento que brinda estilo a los botones de numeros en la calculadora, maneja la disposicion de los elementos en la pantalla, se les asigna un tamaño y un margen a los botones.
+**/
+
 .btn-num {
     display: inline-flex;
     width: 75px;
@@ -44,22 +52,32 @@ Elemento que brinda estilo a la pantalla de la calculadora, desde el control de 
     font-size: 15px;
 }
 
+/**
+Elemento que brinda estilo a los botones de operaciones en la calculadora, maneja sus tamaños asi como un radio del borde.
+**/
 .btn-oper {
     width: 75px;
     margin: 5px;
     border-radius: 10px;
     font-size: 15px;
 }
-
+/**
+Elemento que brinda estio a el cuerpo dandole un background con un fondo obtenido desde la carpeta de Recursos de la pagina
+**/
 body {
     background-image: url("../Recursos/spiration%20dark.png");
 }
 
-#operator-c{
+/**
+Elemento que brinda estilo a el boton de operador C dandole un color que lo resalta de los demas botones operativos, con idea de señalarlo como un operador diferente
+**/
+#operator-c {
     background-color: orangered;
 }
 
+/**
+Elemento que brinda estilo a el text que contendra el historial de la calculadora, dandole un tamaño maximo.
+**/
 #historial {
     max-width: 300px;
-    align-content: center;
 }
