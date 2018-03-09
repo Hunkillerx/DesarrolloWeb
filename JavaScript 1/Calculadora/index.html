@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Documento HTML dando el esqueleto y diseño de una calculadora-->
+<!-- @author Jose Armando Diaz Segura-->
+<!-- @date 03 Marzo de 2018-->
 <head>
     <meta charset="UTF-8">
     <title>Calculadora</title>
+    <!-- Identificador de el documento css que utilizara la pagina para el control de diseño y estilos. -->
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 
 <body>
+  <!-- Titulo Principal-->
+   <h1>Calculadora</h1>
+   <!-- Clase wrapper que contendra todo el cuerpo de la calculadora-->
     <div class="wrapper">
         <div id="caja-pantalla">
+           <!-- Input text, se utilizara como la pantalla de la calculadora donde el user podra ver los numeros señalados para las operaciones, asi como el resultado de estas-->
             <input type="text" id="pantalla" disabled value="0">
         </div>
-        <div>
+        <!-- Divisor que contendra todos los botones de los numeros, todos con clase "btn-num" para controlar todos los botones de numeros ademas cada uno con id asociado a el numero que representa.-->
+        <div id= "btns-numeros">
             <button id="btn-num-1" class="btn-num">1</button>
             <button id="btn-num-2" class="btn-num">2</button>
             <button id="btn-num-3" class="btn-num">3</button>
@@ -23,6 +32,7 @@
             <button id="btn-num-9" class="btn-num">9</button>
             <button id="btn-num-0" class="btn-num">0</button>
         </div>
+        <!-- Divisor que contendra todos los botones de las operaciones posibles en la calculadora, todos con la clase "btn-oper" para controlar todos los botones de las operacioes ademas cada uno con id asociado a la operacion que realizan. -->
         <div id="operaciones">
             <button id="operator-+" class="btn-oper">+</button>
             <button id="operator--" class="btn-oper">-</button>
@@ -32,10 +42,12 @@
             <button id="operator-=" class="btn-oper">=</button>
             <button id="operator-c" class="btn-oper">CE</button>
         </div>
-    </div>
-    <div>
-        <textarea name="historial" id="historial" cols="30" rows="10"></textarea>
+        <!-- Divisor que contendra un textArea que se usara como el historial de la calculadora, donde se mostrara al user las operaciones realizadas en la calculadora -->
+        <div>
+            <textarea name="text" id="historial" cols="0" rows="10"></textarea>
+        </div>
     </div>
 </body>
-<script type="text/javascript" src="Scritps/scripts.js"></script>
+<!-- Identificador del script de javascript que utilizara la pagina para sus operaciones-->
+<script type="text/javascript" src="Scritps/scripts.js" d></script>
 </html>

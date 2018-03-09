@@ -1,18 +1,31 @@
+/**
+Documento de css que brinda los estilos para la calculadora
+@author Jose Armando Diaz Segura
+@date 03 Marzo 2018
+**/
+
+/**
+Elemento que brinda el estilo a toda la pagina en general.Se le asigna un margin y padding automatico asi como un tamaño general del 90% de la pagina
+**/
 * {
-    margin: 0 auto;
+    margin: auto;
     padding: auto;
     width: 90%;
 }
 
+/**
+Elemento que brinda estilos a la clase Wrapper que es la que contiene todo el cuerpo de la calculadora. Se asigna un tamaño maximo a el cuerpo, una alineacion asi como un borde de color blanco, un control de padding de 10 pixeles y un margin automatico.
+**/
 .wrapper {
-    width: 100%;
     max-width: 400px;
     text-align: center;
     border: solid 1px white;
     padding-bottom: 10px;
     margin: auto;
 }
-
+/**
+Elemento que brinda estilo a la pantalla de la calculadora, desde el control de estilo a la fuente, asi como un margen, tamaño y radio al borde.
+**/
 #pantalla {
     font-size: 20px;
     font-family: sans-serif;
@@ -42,6 +55,11 @@ body {
     background-image: url("../Recursos/spiration%20dark.png");
 }
 
-#operator-c {
+#operator-c{
     background-color: orangered;
+}
+
+#historial {
+    max-width: 300px;
+    align-content: center;
 }
