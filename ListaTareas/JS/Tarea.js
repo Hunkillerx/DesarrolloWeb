@@ -9,6 +9,8 @@ function Tarea(descripcion, fecha, realizada){
         cadena += realizada?'checked':'';
         cadena += '><label for="task';
         cadena += pos +'">'+this.descripcion+'</label>';
+        cadena += '<button class="btn btn-outline-primary btn-small" id="btn-edit'+pos+'>Edit</button>';
+        cadena += '<button class="btn btn-outline-danger btn-small" id="btn-remove">Remove</button>';
         return cadena;
     }
 }
