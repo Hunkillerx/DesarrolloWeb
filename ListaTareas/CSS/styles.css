@@ -24,3 +24,8 @@ body{
 .my-float{
 	margin-top:22px;
 }
+
+.button {
+    width: 30px;
+    border-radius: 50%;
+}
