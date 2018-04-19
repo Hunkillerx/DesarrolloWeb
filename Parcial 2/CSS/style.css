@@ -1,0 +1,12 @@
+
+historial {
+    overflow: scroll;
+    width: 2000px;
+   
+}
+
+.historial {
+    overflow: visible;
+    width: auto;
+    max-width: 200px;
+}

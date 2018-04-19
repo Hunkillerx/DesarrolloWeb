@@ -27,7 +27,7 @@ var numClick = function () {
     if (pantalla.getAttribute("value") === "0") {
         pantalla.setAttribute("Value", this.textContent);
     } else {
-        pantalla.setAttribute("value", pantalla.getAttribute("value") + this.textContent);
+        pantalla.setAttribute("value",pantalla.getAttribute("value") + this.textContent);
     }
 };
 
