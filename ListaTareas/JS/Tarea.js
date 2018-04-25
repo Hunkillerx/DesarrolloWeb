@@ -4,13 +4,19 @@ function Tarea(descripcion, fecha, realizada){
     this.realizada = realizada;
 
     this.generarHtmlTarea = function(pos){
+        var cadena = '<>'
         var cadena = '<input type="checkbox" name="task';
         cadena += pos+'" id="task'+pos+'" ';
         cadena += realizada?'checked':'';
         cadena += '><label for="task';
         cadena += pos +'">'+this.descripcion+'</label>';
-        cadena += '<button class="btn btn-outline-primary btn-small" id="btn-edit'+pos+'>Edit</button>';
-        cadena += '<button class="btn btn-outline-danger btn-small" id="btn-remove">Remove</button>';
-        return cadena;
+
+        var edit = document.createElement("button");
+        edit.type = "button";
+        edit.value = "Editar";
+        edit.onclick = func;
+        document.appendChild(edit);
+
+        return cadena,edit
     }
 }
